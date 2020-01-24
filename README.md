@@ -17,7 +17,9 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  ```
  
  # Model
- The model used here is a CRF layer on top of a Bi-LSTM.
+ The model used here is a CRF layer on top of a Bi-LSTM. <br />
+ The Bi-LSTM looks like... <br /> <br />
+ ![](./Images/Bi_LSTM.png)
  
  
  
