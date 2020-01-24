@@ -39,5 +39,8 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  ### The loss function
  The objective is to maximize the probablity of the path that leads to the correct answer and to minimize the others.
  
+ ![](./Images/loss_func.png)
+ 
+ Where the numerator represents the probablity for the desired path , while Z is the normalizing value(The sum of probablities of all the paths)
  
  
