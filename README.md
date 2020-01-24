@@ -16,6 +16,8 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  <PAD> , <BOS> and <EOT>
  ```
  
- # 
+ # Model
+ The model used here is a CRF layer on top of a Bi-LSTM.
+ 
  
  
