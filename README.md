@@ -42,5 +42,12 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  ![](./Images/loss_func.png)
  
  Where the numerator represents the probablity for the desired path , while Z is the normalizing value(The sum of probablities of all the paths)
+ <br />
+ For the loss we just take the negative log of this function. calculation Z with brute force will take exp time. So we use dynamic     programming (Forward algorithm) to calculate it. 
  
+### Inference 
+At test time we want to get the sequence(path) of answer that has maximum probablity, instead of computing probablity of each path and then comparing we use viterbi decoding.
+ <br /> <br /> <br /> <br />
+``` I have implemented Both Forward and Viterbi algorithms in the notebook```
  
+ If you want to get familiar with the algorithms [here](https://www.youtube.com/watch?v=GF3iSJkgPbA) is a great source(Thats where I learned it from  :))
