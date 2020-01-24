@@ -36,5 +36,8 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  ### The CRF layer
  The CRF layer basically trains a matrix of shape ```n_tags*n_tags```. This matrix represents the transition probablity of going from i'th tag to j'th tag.
  
+ ### The loss function
+ The objective is to maximize the probablity of the path that leads to the correct answer and to minimize the others.
+ 
  
  
