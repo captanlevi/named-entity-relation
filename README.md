@@ -27,14 +27,14 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  The Bi-LSTM looks like... <br /> <br />
  ![](./Images/Bi_LSTM.png)
  <br />
- The output of Bi_LSTM has the shape ```sequence_length*n_labels```
+ The output of Bi_LSTM has the shape ```sequence_length*n_tags```
   <br /> <br />
- These are just scores for each labels at each time step. I said score and not probablities. This is because we do not apply softmax layer at the end for the outputs.
+ These are just scores for each tag at each time step. I said score and not probablities. This is because we do not apply softmax layer at the end for the outputs.
  ### Do not use softmax 
  You can check the reason [here](https://stackoverflow.com/questions/58377983/which-actvation-function-to-use-for-linear-chain-crf-classifier). I have tried putting a softmax layer at the end of the Bi-lstm outputs and it actually gives terrible results !!!
 
  ### The CRF layer
- The CRF layer basically trains a matrix of shape ```n_labels*n_labels```. This matrix represents the transition probablity
+ The CRF layer basically trains a matrix of shape ```n_tags*n_tags```. This matrix represents the transition probablity of going from i'th tag to j'th tag.
  
  
  
