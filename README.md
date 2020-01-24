@@ -31,7 +31,9 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  ```
  sequence_length*n_labels
  ```
- These are just scores for each labels at each time step. I said score and not probablities. This is because we do not apply softmax layer at the end for the outputs... you can check the reason [here](https://stackoverflow.com/questions/58377983/which-actvation-function-to-use-for-linear-chain-crf-classifier). I have tried putting a softmax layer at the end of the Bi-lstm outputs and it actually gives terrible results !!!
+ These are just scores for each labels at each time step. I said score and not probablities. This is because we do not apply softmax layer at the end for the outputs.
+ ## Do not use softmax 
+ You can check the reason [here](https://stackoverflow.com/questions/58377983/which-actvation-function-to-use-for-linear-chain-crf-classifier). I have tried putting a softmax layer at the end of the Bi-lstm outputs and it actually gives terrible results !!!
 
  
  
