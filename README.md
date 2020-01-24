@@ -18,8 +18,21 @@ You can find out about the tagging scheme [here](https://en.wikipedia.org/wiki/I
  
  # Model
  The model used here is a CRF layer on top of a Bi-LSTM. <br />
+ ```
+ Word_sequence->Index->Embedding->Bi-LSTM-->CRF_layer
+ ```
+ <br /> <br />
+ 
+ 
  The Bi-LSTM looks like... <br /> <br />
  ![](./Images/Bi_LSTM.png)
+ <br />
+ The output of Bi_LSTM has the shape..
+ ```
+ sequence_length*n_labels
+ ```
+ These are just scores for each labels at each time step. I said score and not probablities. This is because we do not apply softmax layer at the end for the outputs... you can check the reason [here](https://stackoverflow.com/questions/58377983/which-actvation-function-to-use-for-linear-chain-crf-classifier). I have tried putting a softmax layer at the end of the Bi-lstm outputs and it actually gives terrible results !!!
+
  
  
  
